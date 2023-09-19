@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.leaflet-container {
+  height: 495px;
+  width: 40rem;
+  border: 1px solid rgb(22, 21, 21);
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px black;
+  outline: 5px solid whitesmoke;
+  margin-left: 5rem;
+}
+#profile-container {
+  width: 20rem;
+}
+/* Adjust styles for smaller screens (e.g., tablets) */
+@media screen and (max-width: 768px) {
+  .leaflet-container {
+    height: 300px;
+    width: 30rem;
+    margin-left: 0;
+    margin-top: 7px; /* Adjust margins for smaller screens */
+  }
+  #profile-container {
+    width: 30rem;
+  }
+}
+
+/* Adjust styles for even smaller screens (e.g., smartphones) */
+@media screen and (max-width: 480px) {
+  .leaflet-container {
+    height: 200px;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 10px; /* Adjust margins for smaller screens */
+  }
+}
